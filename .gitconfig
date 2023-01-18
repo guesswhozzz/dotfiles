@@ -1,0 +1,61 @@
+[user]
+	name = guesswhozzz
+	email = torridtime@gmail.com
+[color]
+    showbranch = auto
+    ui = true
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+    pager = true
+    advice = true
+[color "decorate"]
+    HEAD = magenta 
+    branch = 85
+    remoteBranch = blue
+    tag = 146
+    stash = 167
+[color "status"]
+    deleted = blue
+    header = 253
+    added = green
+    changed = cyan 
+    unmerged = 167
+    untracked = blue
+    branch = 85
+[color "branch"]
+    current = 85
+    local = 247
+    remote = yellow
+    plain = blue
+[color "diff"]
+     context = 253 # context (ie: unchanged lines) text
+     whitespace = red
+     meta = 67
+     frag = 253 24 strike 
+     old = 167 
+     new = 116 
+     commit = 151
+     newMoved = red
+[color "interactive"]
+     prompt = normal
+     header = normal
+     help = normal
+     error = normal
+[core]
+	editor = vim
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[log]
+    date = short
+    abbrevCommit = true
+	  decorate = full
+    decorate = true
+[format]
+    pretty = oneline
+[credential]
+	  helper = cache
